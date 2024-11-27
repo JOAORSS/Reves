@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="shortcut icon" href="../assets/iconReves.png" type="image/x-icon">
+    <title>Reves - Adicionar produto</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.php"><img src="../assets/logorevesboutique.png" alt="BANNER LOGO"></a>
+        <h2>Administrador</h2>
+    </header>
+    <main>
+        <h2>Adicionar um novo produto ao estoque</h2>
+        <form action="resposta_inserir_produto.php" method="post" enctype="multipart/form-data">
+            <h3>Formulário</h3>
+            <label>Nome:</label>
+            <input type="text" required name="nome">
+            <label>Data:</label>
+            <input type="date" required name="data">
+            <label>Descricao:</label>
+            <input type="text" required name="descricao">
+            <label>Imagem</label>
+            <input type="file" required accept="image/*" name="imagem">
+            <input type="submit" value="Enviar">
+        </form>
+
+        <a href="../index.php">Voltar a pagina principal admin</a>
+    </main>
+    <footer>
+        <h2>2024 Alice Maffei Rizzetti & João Vitor Raenke dos Santos</h2>
+        <h2>Todos os direitos reservados - 2024</h2>
+    </footer>
+
+</body>
+
+</html>
